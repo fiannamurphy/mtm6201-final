@@ -1,3 +1,5 @@
+/* i used CSS varibales so I can control colors and repeated styles */
+
 :root {
   --bs-primary: #1b9a90;
   --bs-secondary: #6b7992;
@@ -7,6 +9,7 @@
   --bs-body-color: #264143;
   --bs-border-radius: 1rem;
 
+  /* Main custom colors for the site */
   --site-teal: #1b9a90;
   --site-teal-dark: #147e75;
   --site-pale: #edf4f4;
@@ -18,22 +21,26 @@
   --site-shadow: 0 12px 32px rgba(21, 40, 42, 0.08);
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base font and colors throughout the site */
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
 }
 
+/* Keeps images from overflowing their containers */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+/* Headings and branding */
 h1,
 h2,
 h3,
@@ -43,10 +50,12 @@ h4,
   color: var(--site-deep);
 }
 
+/* Adds line height to paragraphs */
 p {
   line-height: 1.7;
 }
 
+/* Default link color */
 a {
   color: var(--site-teal);
 }
@@ -56,6 +65,7 @@ a:focus {
   color: var(--site-teal-dark);
 }
 
+/* This is hidden until someone tabs to it */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -72,6 +82,7 @@ a:focus {
   border-radius: 0.5rem;
 }
 
+/* Sticky header so nav stays at the top */
 .site-header {
   background: rgba(248, 251, 251, 0.92);
   border-bottom: 1px solid var(--site-border);
@@ -81,10 +92,12 @@ a:focus {
   z-index: 1000;
 }
 
+/* Adds padding to the navbar */
 .navbar {
   padding: 1rem 0;
 }
 
+/* Makes the site name bold */
 .navbar-brand {
   font-size: 1.1rem;
   font-weight: 800;
@@ -101,6 +114,7 @@ a:focus {
   color: #fff;
 }
 
+/* Navigation links */
 .nav-link {
   font-weight: 600;
   color: var(--site-deep);
@@ -112,11 +126,13 @@ a:focus {
   color: var(--site-teal);
 }
 
+/* Rounded buttons */
 .btn-nav {
   border-radius: 999px;
   padding-inline: 1rem;
 }
 
+/* Main spacing utilities for sections */
 .section-space {
   padding: 5rem 0;
 }
@@ -125,6 +141,7 @@ a:focus {
   padding: 3rem 0;
 }
 
+/* Hero background keeps the top area lighter and softer */
 .hero-section {
   background:
     radial-gradient(circle at top left, rgba(27, 154, 144, 0.1), transparent 35%),
@@ -143,6 +160,7 @@ a:focus {
   color: #53686a;
 }
 
+/* Small label style used above headings */
 .eyebrow {
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -153,6 +171,7 @@ a:focus {
   color: var(--site-teal);
 }
 
+/* Shared card styling used in a lot of sections */
 .hero-card,
 .preview-card,
 .cta-panel,
@@ -168,17 +187,20 @@ a:focus {
   box-shadow: var(--site-shadow);
 }
 
+/* Add spcae inside larger preview cards */
 .hero-card,
 .preview-card {
   padding: 1rem;
 }
 
+/* Preview images fill the card width */
 .hero-image,
 .preview-image {
   width: 100%;
   border-radius: 1rem;
 }
 
+/* Pill-shaped buttons */
 .btn-pill {
   border-radius: 999px;
   padding: 0.85rem 1.5rem;
@@ -196,6 +218,7 @@ a:focus {
   border-color: var(--site-teal-dark);
 }
 
+/* Softer button style for lighter actions */
 .btn-soft {
   background: var(--site-pale);
   color: var(--site-deep);
@@ -208,17 +231,20 @@ a:focus {
   color: var(--site-deep);
 }
 
+/* Keeps section heading text from getting too wide */
 .section-heading {
   max-width: 48rem;
   margin-inline: auto;
 }
 
+/* Padding inside smaller cards */
 .feature-card,
 .resource-card,
 .mini-card {
   padding: 1.5rem;
 }
 
+/* Card heading sizes */
 .feature-card h3,
 .resource-card h2,
 .mini-card h3 {
@@ -226,6 +252,7 @@ a:focus {
   margin-bottom: 0.75rem;
 }
 
+/* Circular icon style used in resource cards */
 .icon-bubble {
   width: 3.2rem;
   height: 3.2rem;
@@ -239,6 +266,7 @@ a:focus {
   margin-bottom: 1rem;
 }
 
+/* Light alternate background section */
 .alt-section {
   background: linear-gradient(180deg, #f3f8f8 0%, #f8fbfb 100%);
 }
@@ -252,20 +280,24 @@ a:focus {
   margin-bottom: 0.6rem;
 }
 
+/* Extra space inside larger CTA box */
 .cta-panel {
   padding: 2.5rem 1.5rem;
 }
 
+/* Responsive heading size for banner */
 .page-banner h1 {
   font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
+/* Layout for the topic pills */
 .pill-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
+/* Default topic pill style */
 .filter-pill {
   display: inline-flex;
   align-items: center;
@@ -277,16 +309,19 @@ a:focus {
   font-weight: 600;
 }
 
+/* Active topic pill stands out more */
 .active-pill {
   background: var(--site-teal);
   border-color: var(--site-teal);
   color: #fff;
 }
 
+/* Padding inside community post cards */
 .post-card {
   padding: 1.5rem;
 }
 
+/* Aligns avatar and text in post header */
 .post-meta {
   display: flex;
   align-items: flex-start;
@@ -294,6 +329,7 @@ a:focus {
   margin-bottom: 1rem;
 }
 
+/* Avatar circle style */
 .post-avatar {
   width: 3rem;
   height: 3rem;
@@ -306,17 +342,20 @@ a:focus {
   flex-shrink: 0;
 }
 
+/* Community post titles */
 .post-title {
   font-size: 1.15rem;
   margin-bottom: 0.25rem;
 }
 
+/* Smaller subtitle under post title */
 .post-subtitle {
   margin-bottom: 0;
   color: var(--site-slate);
   font-size: 0.95rem;
 }
 
+/* Tag layout under posts */
 .post-tags {
   display: flex;
   flex-wrap: wrap;
@@ -324,11 +363,13 @@ a:focus {
   margin-top: 1rem;
 }
 
+/* Post tags and support list font size */
 .post-tags span,
 .support-list li {
   font-size: 0.95rem;
 }
 
+/* Style for each post tag */
 .post-tags span {
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
@@ -337,11 +378,13 @@ a:focus {
   font-weight: 600;
 }
 
+/* Inner spacing for thread and support boxes */
 .thread-panel,
 .support-panel {
   padding: 1.75rem;
 }
 
+/* Thread message box style */
 .thread-item {
   padding: 1rem;
   margin-top: 1rem;
@@ -354,17 +397,20 @@ a:focus {
   margin: 0.4rem 0 0;
 }
 
+/* Spacing for support list */
 .support-list {
   padding-left: 1.2rem;
   margin: 1rem 0 1.5rem;
 }
 
+/* Footer section */
 .site-footer {
   padding: 2rem 0;
   border-top: 1px solid var(--site-border);
   background: #f7fbfb;
 }
 
+/* Footer links layout */
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -380,6 +426,7 @@ a:focus {
   font-weight: 600;
 }
 
+/* Slight layout adjustments for tablet and up */
 @media (min-width: 768px) {
   .hero-card,
   .preview-card {
@@ -395,12 +442,14 @@ a:focus {
   }
 }
 
+/* Adds space when nav collapses on smaller screens */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     padding-top: 1rem;
   }
 }
 
+/* Smaller screen adjustments */
 @media (max-width: 575.98px) {
   .section-space {
     padding: 4rem 0;
