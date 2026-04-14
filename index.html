@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calm Connect | Home</title>
+  <meta name="description" content="Calm Connect is a wellness-focused platform designed to support reflection, community, and mental well-being.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,32 +16,24 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light site-navbar py-3">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <span class="brand-mark">🍃</span>
-          <span>Calm Connect</span>
+          <img src="images/logo.png" alt="Calm Connect logo" width="40">
+          <span class="brand-text">Calm Connect</span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="main-nav">
+        <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="community.html">Community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-outline-primary btn-nav mt-2 mt-lg-0" href="resources.html">Get Support</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-outline-primary rounded-pill px-4" href="#features">Explore</a></li>
           </ul>
         </div>
       </div>
@@ -48,152 +41,153 @@
   </header>
 
   <main id="main-content">
-    <section class="hero-section section-space">
+    <section class="hero-section py-5 py-lg-6">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <p class="eyebrow">Calm space. Daily support. Real connection.</p>
-            <h1 class="hero-title">A wellness platform designed to help people feel supported every day.</h1>
-            <p class="hero-text">
-              Calm Connect brings together mood tracking, guided reflection, journaling, and community support in one calming digital experience inspired by accessible, user-centered design.
+            <p class="eyebrow mb-3">Mental wellness made gentle</p>
+            <h1 class="display-5 fw-bold mb-3">A calm digital space for reflection, support, and daily balance.</h1>
+            <p class="lead mb-4">
+              Calm Connect helps users check in with their emotions, build healthier habits, and connect with a supportive community through a simple and welcoming experience.
             </p>
             <div class="d-flex flex-wrap gap-3">
-              <a href="community.html" class="btn btn-primary btn-pill">Explore Community</a>
-              <a href="resources.html" class="btn btn-soft btn-pill">View Resources</a>
+              <a class="btn btn-primary btn-lg rounded-pill px-4" href="#features">Discover Features</a>
+              <a class="btn btn-light btn-lg rounded-pill px-4 border" href="community.html">Visit Community</a>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <div class="hero-card">
-              <picture>
-                <source srcset="images/hero-preview.webp" media="(min-width: 768px)">
-                <img src="images/hero-preview.webp" alt="Preview of the Calm Connect dashboard interface" class="img-fluid hero-image">
-              </picture>
+            <div class="hero-card card-custom p-4">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="mini-panel p-3">
+                    <p class="mini-label mb-2">Today’s Mood</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="mood-pill">😊 Calm</span>
+                      <span class="mood-pill">🙂 Okay</span>
+                      <span class="mood-pill">😌 Hopeful</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini-panel p-3 h-100">
+                    <p class="mini-label mb-2">Quick Journal</p>
+                    <p class="mb-0 small-text">Write down your thoughts and reflect on your day in a private and comforting space.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini-panel p-3 h-100">
+                    <p class="mini-label mb-2">Breathing Exercise</p>
+                    <p class="mb-0 small-text">Use guided breathing tools to slow down and reset whenever you need a moment.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mini-panel p-3">
+                    <p class="mini-label mb-2">Community Support</p>
+                    <p class="mb-0 small-text">Join a kind, moderated community space where people can share encouragement and coping strategies.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-space">
+    <section id="features" class="py-5">
       <div class="container">
-        <div class="section-heading text-center">
-          <p class="eyebrow">Core features</p>
-          <h2>Tools that support a calmer routine</h2>
-          <p class="section-text mx-auto">
-            The interface focuses on small, supportive actions that feel approachable and easy to use across screen sizes.
-          </p>
+        <div class="section-heading text-center mb-5">
+          <p class="eyebrow mb-2">Key features</p>
+          <h2 class="fw-bold">Tools inspired by your app screens</h2>
+          <p class="section-copy mx-auto">These sections translate your mobile UI into a responsive website layout while keeping the same calm visual style.</p>
         </div>
 
-        <div class="row g-4 mt-2">
+        <div class="row g-4">
           <div class="col-md-6 col-xl-3">
-            <article class="feature-card h-100">
-              <div class="icon-bubble">😊</div>
-              <h3>Mood Tracking</h3>
-              <p>Users can check in regularly and build awareness of emotional patterns over time.</p>
+            <article class="card-custom h-100 p-4">
+              <div class="icon-circle mb-3">📝</div>
+              <h3 class="h5">Journaling</h3>
+              <p class="mb-0">Users can reflect on their day, record personal thoughts, and build a healthier self-awareness routine.</p>
             </article>
           </div>
 
           <div class="col-md-6 col-xl-3">
-            <article class="feature-card h-100">
-              <div class="icon-bubble">📝</div>
-              <h3>Journaling</h3>
-              <p>Reflection tools give users a private place to write down thoughts and process daily experiences.</p>
+            <article class="card-custom h-100 p-4">
+              <div class="icon-circle mb-3">🌬️</div>
+              <h3 class="h5">Breathing Tools</h3>
+              <p class="mb-0">Guided breathing exercises help reduce stress and create a pause during overwhelming moments.</p>
             </article>
           </div>
 
           <div class="col-md-6 col-xl-3">
-            <article class="feature-card h-100">
-              <div class="icon-bubble">🌿</div>
-              <h3>Guided Activities</h3>
-              <p>Simple wellness activities encourage breathing, mindfulness, and emotional reset.</p>
+            <article class="card-custom h-100 p-4">
+              <div class="icon-circle mb-3">💬</div>
+              <h3 class="h5">Community Feed</h3>
+              <p class="mb-0">A supportive shared space allows users to read posts, comment gently, and feel less alone.</p>
             </article>
           </div>
 
           <div class="col-md-6 col-xl-3">
-            <article class="feature-card h-100">
-              <div class="icon-bubble">💬</div>
-              <h3>Community Support</h3>
-              <p>Shared spaces help people connect, respond, and support one another in a respectful environment.</p>
+            <article class="card-custom h-100 p-4">
+              <div class="icon-circle mb-3">📊</div>
+              <h3 class="h5">Mood Tracking</h3>
+              <p class="mb-0">Mood summaries and check-ins help users notice patterns and understand their emotional progress over time.</p>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-space alt-section">
+    <section class="py-5 soft-section">
       <div class="container">
-        <div class="row g-4 align-items-stretch">
-          <div class="col-lg-4">
-            <article class="preview-card h-100">
-              <picture>
-                <source srcset="images/feature-mood.webp" media="(min-width: 768px)">
-                <img src="images/feature-mood.webp" alt="Mood tracking interface preview" class="img-fluid preview-image">
-              </picture>
-              <div class="preview-copy">
-                <h3>Track how you feel</h3>
-                <p>A light and clear layout helps users complete emotional check-ins without extra clutter.</p>
-              </div>
-            </article>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <div class="card-custom p-4 p-lg-5 h-100">
+              <p class="eyebrow mb-2">Why it matters</p>
+              <h2 class="fw-bold mb-3">Designed to feel safe, simple, and supportive</h2>
+              <p>
+                The Calm Connect concept focuses on emotional comfort through soft colours, rounded shapes, clear structure, and friendly interactions. The design aims to reduce stress instead of adding to it.
+              </p>
+              <p class="mb-0">
+                Every section supports the idea of balance: a quiet dashboard, welcoming community, and helpful resource tools for moments when someone needs extra support.
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-4">
-            <article class="preview-card h-100">
-              <picture>
-                <source srcset="images/feature-journal.webp" media="(min-width: 768px)">
-                <img src="images/feature-journal.webp" alt="Journal writing screen preview" class="img-fluid preview-image">
-              </picture>
-              <div class="preview-copy">
-                <h3>Reflect with intention</h3>
-                <p>The journaling feature supports short reflections and daily writing in a comfortable space.</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4">
-            <article class="preview-card h-100">
-              <picture>
-                <source srcset="images/feature-community.webp" media="(min-width: 768px)">
-                <img src="images/feature-community.webp" alt="Community feed preview" class="img-fluid preview-image">
-              </picture>
-              <div class="preview-copy">
-                <h3>Feel less alone</h3>
-                <p>Community features promote empathy, support, and shared conversations around wellness.</p>
-              </div>
-            </article>
+          <div class="col-lg-6">
+            <div class="card-custom p-4 p-lg-5 h-100">
+              <p class="eyebrow mb-2">Main goals</p>
+              <ul class="feature-list mb-0">
+                <li>Encourage daily reflection and mental wellness habits</li>
+                <li>Make emotional support feel approachable and non-judgmental</li>
+                <li>Provide easy access to calming activities and resources</li>
+                <li>Create a community-focused experience with gentle moderation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-space">
+    <section class="py-5">
       <div class="container">
-        <div class="cta-panel text-center">
-          <p class="eyebrow">Designed from UX planning</p>
-          <h2>Built from wireframes, mockups, and thoughtful interface choices.</h2>
-          <p class="section-text mx-auto">
-            This website adapts the visual language of the Calm Connect app into a responsive Bootstrap experience with a focus on clarity, accessibility, and consistency.
-          </p>
-          <a href="resources.html" class="btn btn-primary btn-pill">See Support Resources</a>
+        <div class="cta-banner card-custom p-4 p-lg-5 text-center">
+          <p class="eyebrow mb-2">Explore more</p>
+          <h2 class="fw-bold mb-3">See how the community and support features come together.</h2>
+          <p class="mb-4">Browse the next pages to view the community space and wellness resource sections inspired by your design system.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="community.html" class="btn btn-primary rounded-pill px-4">Community Page</a>
+            <a href="resources.html" class="btn btn-outline-primary rounded-pill px-4">Resources Page</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-3 align-items-center">
-        <div class="col-md-6">
-          <p class="mb-0">© 2026 Calm Connect</p>
-        </div>
-        <div class="col-md-6">
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="community.html">Community</a></li>
-            <li><a href="resources.html">Resources</a></li>
-          </ul>
-        </div>
-      </div>
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">© 2026 Calm Connect</p>
+      <p class="mb-0">Designed as a final front-end project inspired by UX wireframes.</p>
     </div>
   </footer>
 
